@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Level
   - LevelManager
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,9 +14,9 @@ TagManager:
   - Env
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Projp
+  - Proje
+  - Player
   - 
   - 
   - 

@@ -25,7 +25,7 @@ public class HealthScript : MonoBehaviour
             hp = preHp;
             invun--;
         }
-        if (hp <= 0 && invun>0){
+        if (hp <= 0){
             if (resetOnDeath){
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }else{

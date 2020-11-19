@@ -19,7 +19,7 @@ public class LevelScrollManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        scroll+=(Input.GetAxis("Horizontal")/6)+p.transform.position.x;
+        scroll+=(Input.GetAxis("Horizontal")/8)+p.transform.position.x;
         if (scroll < 0){
             scroll = 0;
         }
@@ -27,7 +27,7 @@ public class LevelScrollManager : MonoBehaviour
         int index = Mathf.RoundToInt(scroll)/step;
         if (sl[index] != true){
             sl[index] = true;
-            GameObject level = Instantiate(lvls[Random.Range(0,2)],new Vector3(scroll,1f,0f),Quaternion.identity);
+            GameObject level = Instantiate(lvls[Random.Range(0,2)],new Vector3(scroll,0f,0f),Quaternion.identity);
             level.GetComponent<LevelScroll>().ahead = -((step * index)+(step/2));
             level.GetComponent<LevelScroll>().myIndex = index;
             sl.Add(false);

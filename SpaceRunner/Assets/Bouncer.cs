@@ -8,6 +8,7 @@ public class Bouncer : MonoBehaviour
     private GameObject player;
     Vector3 lastVelocity;
     public int speed;
+    public int damage;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -30,6 +31,8 @@ public class Bouncer : MonoBehaviour
         var direction = Vector3.Reflect(lastVelocity.normalized, col.contacts[0].normal);
         rb.velocity = direction * Mathf.Max(speed,1f);
         //make sound
-        //hurt player
+        if (col.transform.tag == "Player"){
+            player.GetComponent<HealthScript>().hp -= damage;
+        }
     }
 }

@@ -41,6 +41,11 @@
      <Compile Include="Assets\LevelScrollManager.cs" />
      <Compile Include="Assets\LevelScroll.cs" />
      <Compile Include="Assets\HealthScript.cs" />
+     <Compile Include="Assets\HPrenderer.cs" />
+     <Compile Include="Assets\GunScript.cs" />
+     <Compile Include="Assets\Zero Rare\Retro Sound Effects\Demo\Demo.cs" />
+     <Compile Include="Assets\LaserScript.cs" />
+     <Compile Include="Assets\StormScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -609,16 +614,16 @@
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>C:/Users/josep/SpaceRunner/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunner/SpaceRunner/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Users/josep/SpaceRunner/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunner/SpaceRunner/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/josep/SpaceRunner/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunner/SpaceRunner/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/josep/SpaceRunner/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunner/SpaceRunner/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

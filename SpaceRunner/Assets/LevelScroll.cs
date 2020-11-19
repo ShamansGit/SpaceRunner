@@ -9,7 +9,7 @@ public class LevelScroll : MonoBehaviour
     public int myIndex;
     void Start()
     {
-        //ahead -=20;
+        ahead -=10;
         lsc = GameObject.FindGameObjectWithTag("LevelManager");
     }
 
@@ -18,7 +18,7 @@ public class LevelScroll : MonoBehaviour
     {
         float loc = -(lsc.GetComponent<LevelScrollManager>().scroll + ahead);
         transform.position  = new Vector3(loc,0,0);
-        if (transform.position.x <=-40){
+        if (transform.position.x <=-100){
             Destroy(gameObject);
             lsc.GetComponent<LevelScrollManager>().sl[myIndex] = false;
         }
