@@ -7,6 +7,7 @@ public class StormScript : MonoBehaviour
     GameObject lsc;
     public float ahead,speed;
     private GameObject p;
+    public bool Active;
     void Start()
     {
         //ahead -=20;
@@ -17,7 +18,9 @@ public class StormScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        ahead+=speed;
+        if (Active){
+            ahead+=speed;
+        }
         float loc = 0f;
         if (ahead < lsc.GetComponent<LevelScrollManager>().scroll){
             loc += (-lsc.GetComponent<LevelScrollManager>().scroll + ahead);

@@ -4,24 +4,22 @@ using UnityEngine;
 
 public class ShooterScript : MonoBehaviour
 {
-public GameObject WizBullet;
-    public float hp,mhp,speed,range,hrange;
+    public GameObject Laser;
+    public float speed,range,hrange;
     public int dmg;
     private Rigidbody2D rb;
     private GameObject player;
     private Vector2 playerPos,pos;
     public bool alerted;
     public int reload,maxreload;
-    public AudioSource shoot;
-    public Sprite shootSprite,idleSprite;
-    public AudioClip die;
-    public GameObject coin;
+    //public AudioSource shoot;
+    //public Sprite shootSprite,idleSprite;
+    //public AudioClip die;
     public float bulletSpeed;
     void Start()
     {
         player = GameObject.Find("Player");
         rb = gameObject.GetComponent<Rigidbody2D>();
-        hp = mhp;
     }
     void FixedUpdate()
     {
@@ -50,18 +48,18 @@ public GameObject WizBullet;
         if (reload >= maxreload && alerted){
             //if player does not move the enemy will not attack
             reload = 0;
-            GetComponent<SpriteRenderer>().sprite = shootSprite;
+            //GetComponent<SpriteRenderer>().sprite = shootSprite;
             Shoot();
             
             
         }else if (reload >= (maxreload / 2)){
-            GetComponent<SpriteRenderer>().sprite = idleSprite;
+            //GetComponent<SpriteRenderer>().sprite = idleSprite;
         }
     }
     void Shoot(){
         //GetComponent<SpriteRenderer>().sprite = shootSprite;
-        shoot.Play();
-        GameObject b = Instantiate(WizBullet,transform.position,Quaternion.identity);
+        //shoot.Play();
+        GameObject b = Instantiate(Laser,transform.position,Quaternion.identity);
         b.GetComponent<Rigidbody2D>().velocity = (playerPos-pos).normalized * bulletSpeed;
     }
 }

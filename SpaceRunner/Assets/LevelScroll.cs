@@ -7,6 +7,7 @@ public class LevelScroll : MonoBehaviour
     GameObject lsc;
     public int ahead;
     public int myIndex;
+    public bool persistent = false;
     void Start()
     {
         ahead -=10;
@@ -18,7 +19,7 @@ public class LevelScroll : MonoBehaviour
     {
         float loc = -(lsc.GetComponent<LevelScrollManager>().scroll + ahead);
         transform.position  = new Vector3(loc,0,0);
-        if (transform.position.x <=-100){
+        if (transform.position.x <=-100 && !persistent){
             Destroy(gameObject);
             lsc.GetComponent<LevelScrollManager>().sl[myIndex] = false;
         }

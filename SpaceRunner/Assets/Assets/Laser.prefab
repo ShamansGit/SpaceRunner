@@ -101,6 +101,7 @@ MonoBehaviour:
   damage: 1
   endurance: 100
   Hitfx: {fileID: 4240507079660684980}
+  freindly: 1
 --- !u!50 &5761018126345189491
 Rigidbody2D:
   serializedVersion: 4
