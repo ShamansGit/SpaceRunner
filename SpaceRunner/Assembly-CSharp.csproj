@@ -36,16 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\StormScript.cs" />
      <Compile Include="Assets\Bouncer.cs" />
+     <Compile Include="Assets\LaserScript.cs" />
      <Compile Include="Assets\PlayerMove.cs" />
+     <Compile Include="Assets\HPrenderer.cs" />
+     <Compile Include="Assets\Zero Rare\Retro Sound Effects\Demo\Demo.cs" />
      <Compile Include="Assets\LevelScrollManager.cs" />
+     <Compile Include="Assets\GunScript.cs" />
      <Compile Include="Assets\LevelScroll.cs" />
      <Compile Include="Assets\HealthScript.cs" />
-     <Compile Include="Assets\HPrenderer.cs" />
-     <Compile Include="Assets\GunScript.cs" />
-     <Compile Include="Assets\Zero Rare\Retro Sound Effects\Demo\Demo.cs" />
-     <Compile Include="Assets\LaserScript.cs" />
-     <Compile Include="Assets\StormScript.cs" />
+     <Compile Include="Assets\ShooterScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
