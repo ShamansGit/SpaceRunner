@@ -6,24 +6,31 @@ public class ShooterScript : MonoBehaviour
 {
     public GameObject Laser;
     public float speed,range,hrange;
-    public int dmg;
+    public int clip,maxClip = 3;
+    public float dmg;
     private Rigidbody2D rb;
     private GameObject player;
     private Vector2 playerPos,pos;
     public bool alerted;
-    public int reload,maxreload;
+    public int reload,maxreload,emptyclipreload;
     //public AudioSource shoot;
     //public Sprite shootSprite,idleSprite;
     //public AudioClip die;
     public float bulletSpeed;
     void Start()
     {
+        clip = maxClip;
+        reload = maxreload;
         player = GameObject.Find("Player");
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
     void FixedUpdate()
     {
-        reload++;
+        if (clip <= 0){
+            reload = emptyclipreload;
+            clip = maxClip;
+        }
+        reload--;
         
         playerPos = new Vector2(player.transform.position.x,player.transform.position.y);
         pos = new Vector2(transform.position.x,transform.position.y);
@@ -45,9 +52,10 @@ public class ShooterScript : MonoBehaviour
             }
             
         }
-        if (reload >= maxreload && alerted){
+        if (reload <= 0 && alerted){
             //if player does not move the enemy will not attack
-            reload = 0;
+            reload = maxreload;
+            clip--;
             //GetComponent<SpriteRenderer>().sprite = shootSprite;
             Shoot();
             
@@ -61,5 +69,6 @@ public class ShooterScript : MonoBehaviour
         //shoot.Play();
         GameObject b = Instantiate(Laser,transform.position,Quaternion.identity);
         b.GetComponent<Rigidbody2D>().velocity = (playerPos-pos).normalized * bulletSpeed;
+        b.GetComponent<LaserScript>().damage = dmg;
     }
 }

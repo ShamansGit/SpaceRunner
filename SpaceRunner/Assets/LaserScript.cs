@@ -5,7 +5,7 @@ using UnityEngine;
 public class LaserScript : MonoBehaviour
 {
     private int lifetime;
-    public int damage;
+    public float damage;
     public int endurance = 100;
     private static AudioSource auds;
     private Rigidbody2D rb;

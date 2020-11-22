@@ -47,6 +47,7 @@
      <Compile Include="Assets\LevelScroll.cs" />
      <Compile Include="Assets\HealthScript.cs" />
      <Compile Include="Assets\ShooterScript.cs" />
+     <Compile Include="Assets\TileHurtScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

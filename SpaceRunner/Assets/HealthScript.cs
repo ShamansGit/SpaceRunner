@@ -5,26 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class HealthScript : MonoBehaviour
 {
-    public int maxHp,hp,invuntime = 0;
-    public int invun,preHp;
+    public float maxHp,hp,preHp = 0;
+    // public int invuntime,invun;
     public bool resetOnDeath = false;
     void Start()
     {
         hp = maxHp;
         preHp = hp;
-        invun = 0;
+        // invun = 0;
     }
     void FixedUpdate()
     {
-        //invun
-        if (preHp > hp){
-            invun = invuntime;
-        }
-        preHp = hp;
-        if (invun > 0){
-            hp = preHp;
-            invun--;
-        }
+        // //invun
+        
+        // if (preHp > hp){
+        //     invun = invuntime;
+        //     preHp = hp;
+        //     hp = preHp;
+            
+        // }
+        // else if (invun > 0){
+        //     hp = preHp;
+            
+        //     invun--;
+        // }
+        
+        
         if (hp <= 0){
             if (resetOnDeath){
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);

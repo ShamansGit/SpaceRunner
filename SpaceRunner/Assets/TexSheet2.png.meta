@@ -134,6 +134,9 @@ TextureImporter:
   - first:
       213: -273501030712203789
     second: TexSheet2_43
+  - first:
+      213: -4283587333297024565
+    second: TexSheet2_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -246,32 +249,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
       tessellationDetail: 0
       bones: []
       spriteID: ecf0643e1daddcb30800000000000000
       internalID: 4309341013459472334
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TexSheet2_7
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 1100
-        width: 200
-        height: 134
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab705dff8a6073450800000000000000
-      internalID: 6068326345821456314
       vertices: []
       indices: 
       edges: []
@@ -293,27 +278,6 @@ TextureImporter:
       bones: []
       spriteID: f8e7279b9bb36fa30800000000000000
       internalID: 4248648967336918671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TexSheet2_1
-      rect:
-        serializedVersion: 2
-        x: 790
-        y: 1282
-        width: 96
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d8c70ecbf5848500800000000000000
-      internalID: 397589983655348432
       vertices: []
       indices: 
       edges: []
@@ -524,6 +488,188 @@ TextureImporter:
       bones: []
       spriteID: c68d2f2134aec80a0800000000000000
       internalID: -6877864957099976596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TexSheet2_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 500
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d78d8f1c93f72f0800000000000000
+      internalID: -972995489222328960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TexSheet2_0
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 496
+        width: 97
+        height: 373
+      alignment: 9
+      pivot: {x: 0.5397484, y: 0.28509635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 47.5, y: -112.5}
+        - {x: -43.5, y: -112.5}
+        - {x: -48.5, y: -186.5}
+        - {x: 48.5, y: -186.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9158ec1a4fcc0dc20800000000000000
+      internalID: 3229306283883398425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TexSheet2_14
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1271
+        width: 85
+        height: 79
+      alignment: 9
+      pivot: {x: 0.50000143, y: 0.5402446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080a8b6abb84a5240800000000000000
+      internalID: 4781213925200404608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TexSheet2_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1211
+        width: 125
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3176b02da4f10be60800000000000000
+      internalID: 7975909346285152019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TexSheet2_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1290
+        width: 203
+        height: 74
+      alignment: 9
+      pivot: {x: -0.3373289, y: 0.21167487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf5ad74d3fbf33a0800000000000000
+      internalID: -6683413052075122739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TexSheet2_17
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1081
+        width: 182
+        height: 191
+      alignment: 9
+      pivot: {x: 0.46917003, y: 0.5065279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af14b3c868189d390800000000000000
+      internalID: -7793055265309638150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TexSheet2_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 100
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: -67}
+        - {x: -37, y: -53}
+        - {x: -58, y: 99}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503dbddbf056ab980800000000000000
+      internalID: -8522388226561027323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TexSheet2_25
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 100
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -90, y: -71}
+        - {x: -90, y: -100}
+        - {x: 94, y: -100}
+        - {x: 93, y: -73}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f8342df24e09d30800000000000000
+      internalID: 4436296527002177388
       vertices: []
       indices: 
       edges: []

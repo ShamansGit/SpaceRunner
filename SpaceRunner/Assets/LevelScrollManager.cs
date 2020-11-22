@@ -27,7 +27,7 @@ public class LevelScrollManager : MonoBehaviour
         int index = Mathf.RoundToInt(scroll)/step;
         if (sl[index] != true){
             sl[index] = true;
-            GameObject level = Instantiate(lvls[Random.Range(0,2)],new Vector3(scroll,0f,0f),Quaternion.identity);
+            GameObject level = Instantiate(lvls[Random.Range(0,lvls.Length)],new Vector3(scroll,0f,0f),Quaternion.identity);
             level.GetComponent<LevelScroll>().ahead = -((step * index)+(step/2));
             level.GetComponent<LevelScroll>().myIndex = index;
             sl.Add(false);

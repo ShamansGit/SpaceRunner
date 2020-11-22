@@ -29,7 +29,7 @@ public class Bouncer : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col){
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, col.contacts[0].normal);
-        rb.velocity = direction * Mathf.Max(speed,1f);
+        rb.velocity = direction * Mathf.Max(speed,0.5f);
         //make sound
         if (col.transform.tag == "Player"){
             player.GetComponent<HealthScript>().hp -= damage;

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6237560792954411179}
   - component: {fileID: 4321971232414553432}
   - component: {fileID: 4321971232414553434}
-  - component: {fileID: 4321971232414553433}
+  - component: {fileID: 6336795829684594447}
   m_Layer: 0
   m_Name: Bouncer
   m_TagString: Enemy
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 2747690628134850419, guid: a9716c16a44a94eed9b5c90fbf4d9bdd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -7793055265309638150, guid: ed12095f614cfe04bbb926e209a6b112, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,10 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fcc680f73af0ce4592bfce06665b0e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 5
+  maxHp: 4
   hp: 0
-  invuntime: 1
-  invun: 0
   preHp: 0
   resetOnDeath: 0
 --- !u!114 &4321971232414553432
@@ -139,8 +137,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &4321971232414553433
-BoxCollider2D:
+--- !u!58 &6336795829684594447
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -152,16 +150,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.8828125}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.0015854836, y: -0.006234139}
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8828125}
-  m_EdgeRadius: 0
+  m_Radius: 0.37737465
