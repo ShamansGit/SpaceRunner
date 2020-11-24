@@ -36,18 +36,30 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\StormScript.cs" />
-     <Compile Include="Assets\Bouncer.cs" />
-     <Compile Include="Assets\LaserScript.cs" />
-     <Compile Include="Assets\PlayerMove.cs" />
-     <Compile Include="Assets\HPrenderer.cs" />
      <Compile Include="Assets\Zero Rare\Retro Sound Effects\Demo\Demo.cs" />
+<<<<<<< HEAD
+     <Compile Include="Assets\Scripts\Bouncer.cs" />
+     <Compile Include="Assets\Scripts\StormScript.cs" />
+     <Compile Include="Assets\Scripts\LevelScroll.cs" />
+     <Compile Include="Assets\Scripts\HealthScript.cs" />
+     <Compile Include="Assets\Scripts\LevelScrollManager.cs" />
+     <Compile Include="Assets\Scripts\HPrenderer.cs" />
+     <Compile Include="Assets\Scripts\GunScript.cs" />
+     <Compile Include="Assets\Scripts\LaserScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\JetpackRenderer.cs" />
+     <Compile Include="Assets\Scripts\ShooterScript.cs" />
+     <Compile Include="Assets\Scripts\QuitScript.cs" />
+     <Compile Include="Assets\Scripts\MenuPlayScript.cs" />
+     <Compile Include="Assets\Scripts\PauseScript.cs" />
+     <Compile Include="Assets\Scripts\Pause.cs" />
+=======
      <Compile Include="Assets\LevelScrollManager.cs" />
      <Compile Include="Assets\GunScript.cs" />
      <Compile Include="Assets\LevelScroll.cs" />
      <Compile Include="Assets\HealthScript.cs" />
      <Compile Include="Assets\ShooterScript.cs" />
-     <Compile Include="Assets\TileHurtScript.cs" />
+>>>>>>> parent of 968cd8b... new sprites+levels, spikes
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -616,16 +628,16 @@
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunner/SpaceRunner/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunnerGit/SpaceRunner/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunner/SpaceRunner/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunnerGit/SpaceRunner/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunner/SpaceRunner/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunnerGit/SpaceRunner/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunner/SpaceRunner/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/josep/Documents/GitHub/SpaceRunnerGit/SpaceRunner/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
