@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Zero Rare\Retro Sound Effects\Demo\Demo.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Bouncer.cs" />
      <Compile Include="Assets\Scripts\StormScript.cs" />
      <Compile Include="Assets\Scripts\LevelScroll.cs" />
@@ -52,6 +53,13 @@
      <Compile Include="Assets\Scripts\MenuPlayScript.cs" />
      <Compile Include="Assets\Scripts\PauseScript.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
+=======
+     <Compile Include="Assets\LevelScrollManager.cs" />
+     <Compile Include="Assets\GunScript.cs" />
+     <Compile Include="Assets\LevelScroll.cs" />
+     <Compile Include="Assets\HealthScript.cs" />
+     <Compile Include="Assets\ShooterScript.cs" />
+>>>>>>> parent of 968cd8b... new sprites+levels, spikes
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
