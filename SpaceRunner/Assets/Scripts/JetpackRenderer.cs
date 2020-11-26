@@ -16,8 +16,8 @@ public class JetpackRenderer : MonoBehaviour
         }else{
             gameObject.GetComponent<ParticleSystem>().Stop();
         }
-        float jet = gameObject.transform.parent.gameObject.GetComponent<PlayerMove>().jet;
-        float maxjet = gameObject.transform.parent.gameObject.GetComponent<PlayerMove>().maxjet;
+        float jet = gameObject.transform.parent.parent.gameObject.GetComponent<PlayerMove>().jet;
+        float maxjet = gameObject.transform.parent.parent.gameObject.GetComponent<PlayerMove>().maxjet;
         power.transform.localScale = new Vector3(1f,jet/maxjet,1f);
     }
 }

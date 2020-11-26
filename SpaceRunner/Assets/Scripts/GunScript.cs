@@ -11,7 +11,7 @@ public GameObject bullet,player,shootPoint;
     void Start()
     {
         reload = maxreload;
-        player = gameObject.transform.parent.gameObject;
+        player = gameObject.transform.parent.parent.gameObject;
     }
     void FixedUpdate()
     {
@@ -29,11 +29,6 @@ public GameObject bullet,player,shootPoint;
         
     }
     void Aim(){
-        if (player.GetComponent<SpriteRenderer>().flipX){
-            gameObject.GetComponent<SpriteRenderer>().flipY = true;
-        }else{
-            gameObject.GetComponent<SpriteRenderer>().flipY = false;
-        }
         Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
         Vector2 mouse = Input.mousePosition;
         Vector2 screenPoint = Camera.main.WorldToScreenPoint(transform.position);

@@ -6,6 +6,8 @@ public class PlayerMove : MonoBehaviour
 {
     [HideInInspector]
     public Rigidbody2D rb;
+    [HideInInspector]
+    public SpriteRenderer gunSprite;
     public float speed,vert = 1f;
     public int jet,maxjet;
     public Vector2 vel;
@@ -13,6 +15,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        gunSprite = gameObject.transform.GetChild(2).transform.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -34,7 +37,15 @@ public class PlayerMove : MonoBehaviour
         }
         
         rb.velocity = new Vector2(0,rb.velocity.y);
-        //Input.GetAxis("Horizontal")
+
+        if (Input.GetAxis("Horizontal")<0f){
+            gunSprite.flipY = true;
+            gameObject.transform.GetChild(1).transform.localScale = new Vector3(-1,1,1);
+        }else if (Input.GetAxis("Horizontal")>0f){
+            gunSprite.flipY = false;
+            gameObject.transform.GetChild(1).transform.localScale = new Vector3(1,1,1);
+        }
+        
         vel = new Vector2(0f,Input.GetAxis("Vertical")* v);
         rb.position = new Vector2(0f,rb.position.y);
         if(vel != Vector2.zero){

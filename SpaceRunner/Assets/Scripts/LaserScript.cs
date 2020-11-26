@@ -30,7 +30,7 @@ public class LaserScript : MonoBehaviour
             Destroy(gameObject);
         }
     }  
-    void OnCollisionEnter2D(Collision2D col){
+    void OnTriggerEnter2D(Collider2D col){
         if (col.gameObject.transform.tag == "Enemy" && freindly){
             //auds.Play();
             col.transform.GetComponent<HealthScript>().hp -= damage; 
