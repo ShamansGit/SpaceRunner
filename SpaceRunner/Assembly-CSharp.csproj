@@ -51,6 +51,7 @@
      <Compile Include="Assets\TileHurtScript.cs" />
      <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\HeartScript.cs" />
+     <Compile Include="Assets\Scripts\ShakeScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

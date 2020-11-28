@@ -7,11 +7,12 @@ public class GunScript : MonoBehaviour
 public GameObject bullet,player,shootPoint;
     public int reload,maxreload;
     public AudioSource Shoot;
+    public float sShake;
     private Vector2 offset;
     void Start()
     {
         reload = maxreload;
-        player = gameObject.transform.parent.parent.gameObject;
+        player = gameObject.transform.parent.gameObject;
     }
     void FixedUpdate()
     {
@@ -20,6 +21,7 @@ public GameObject bullet,player,shootPoint;
         Aim();
         if(Input.GetMouseButton(0) && reload >= maxreload){
             //Shoot.pitch = Random.Range(1f,1.1f);
+            GameObject.Find("Main Camera").GetComponent<ShakeScript>().shake = sShake;
             Shoot.Play();
             reload = 0;
             GameObject b = Instantiate(bullet,pos,shootPoint.transform.rotation);

@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Bouncer : MonoBehaviour
 {
+    public AudioSource bounce; 
     private Rigidbody2D rb;
     private GameObject player;
     Vector3 lastVelocity;
     public int speed;
     public int damage;
+    
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -35,6 +37,7 @@ public class Bouncer : MonoBehaviour
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, col.contacts[0].normal);
         rb.velocity = direction * Mathf.Max(speed,0.5f);
+        bounce.Play();
         //make sound
         if (col.transform.tag == "Player"){
             player.GetComponent<HealthScript>().hp -= damage;
