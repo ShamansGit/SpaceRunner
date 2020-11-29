@@ -118,7 +118,7 @@ MonoBehaviour:
   hp: 0
   preHp: 0
   resetOnDeath: 0
-  drops: 1
+  drops: 0
   drop: {fileID: 338846033000591878, guid: fd191db575595b5418054e3593f6577c, type: 3}
   dropAmount: 1
   spread: {x: 1, y: 2}
@@ -156,9 +156,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.024942398, y: -0.006234169}
+  m_Offset: {x: -0.0023821592, y: -0.006234169}
   serializedVersion: 2
-  m_Radius: 0.6342974
+  m_Radius: 0.3688587
 --- !u!82 &-3042307277051870586
 AudioSource:
   m_ObjectHideFlags: 0
@@ -169,10 +169,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 70414c508cbe9274e9f53070ff311352, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d92ee88c0f6e25642ad6906d33e8fa08, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.07
   Loop: 0
   Mute: 0
   Spatialize: 0

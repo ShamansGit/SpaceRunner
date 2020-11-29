@@ -24,7 +24,7 @@ public class PlayerMove : MonoBehaviour
         float v = 0;
         if (Input.GetAxis("Vertical") == 0){
             if (jet < maxjet){
-                jet+=3;
+                jet+=6;
             }
         }else if (jet > 0){
             jet-=7;
