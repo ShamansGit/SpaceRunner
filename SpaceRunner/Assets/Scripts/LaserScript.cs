@@ -36,10 +36,12 @@ public class LaserScript : MonoBehaviour
             col.transform.GetComponent<HealthScript>().hp -= damage; 
             // GameObject fx = Instantiate(Hitfx,transform.position,Quaternion.Euler(0,0,0));
             // Destroy(fx,0.4f);
+            Destroy(gameObject);
             
         }else if (col.gameObject.transform.tag == "Player" && !freindly){
             col.transform.GetComponent<HealthScript>().hp -= damage; 
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
     }  
 }

@@ -11,8 +11,13 @@ public class JetpackRenderer : MonoBehaviour
     }
     void LateUpdate()
     {
-        if (Input.GetAxis("Vertical") > 0f){
+        if (Input.GetKeyDown(KeyCode.W) ||Input.GetKeyDown(KeyCode.UpArrow)){
+            gameObject.GetComponent<AudioSource>().pitch = Random.Range(0.95f,1.05f);
+            gameObject.GetComponent<AudioSource>().Play();
+        }
+        if (Input.GetAxisRaw("Vertical") > 0f){
             gameObject.GetComponent<ParticleSystem>().Play(); 
+
         }else{
             gameObject.GetComponent<ParticleSystem>().Stop();
         }

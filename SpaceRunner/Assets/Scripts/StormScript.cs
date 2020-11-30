@@ -5,7 +5,7 @@ using UnityEngine;
 public class StormScript : MonoBehaviour
 {
     GameObject lsc;
-    public float ahead,speed;
+    public float ahead,speed,dmg;
     private GameObject p;
     public bool Active;
     void Start()
@@ -28,5 +28,11 @@ public class StormScript : MonoBehaviour
         }
         transform.position  = new Vector3(loc,p.transform.position.y,0);
         
+    }
+    void OnTriggerStay2D(Collider2D col){
+        if (col.transform.tag =="Player"){
+            col.gameObject.GetComponent<HealthScript>().hp -= dmg;
+        }
+
     }
 }
