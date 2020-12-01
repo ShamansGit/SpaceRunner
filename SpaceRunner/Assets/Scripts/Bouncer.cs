@@ -41,6 +41,9 @@ public class Bouncer : MonoBehaviour
         //make sound
         if (col.transform.tag == "Player"){
             player.GetComponent<HealthScript>().hp -= damage;
+            if(col.gameObject.GetComponent<HealthScript>().hp<=0){
+                GameObject.Find("deathScreen").GetComponent<DeathScript>().Die("PRICKLED TO DEATH");
+            }             
         }
     }
 }

@@ -32,6 +32,9 @@ public class StormScript : MonoBehaviour
     void OnTriggerStay2D(Collider2D col){
         if (col.transform.tag =="Player"){
             col.gameObject.GetComponent<HealthScript>().hp -= dmg;
+            if(col.gameObject.GetComponent<HealthScript>().hp<=0){
+                GameObject.Find("deathScreen").GetComponent<DeathScript>().Die("lost to the storm");
+            }    
         }
 
     }

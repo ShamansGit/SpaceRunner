@@ -39,7 +39,9 @@ public class HealthScript : MonoBehaviour
                 DropItem();
             }
             if (resetOnDeath){
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //GameObject.Find("deathScreen").GetComponent<DeathScript>().Die("lol bye");
+                Destroy(gameObject);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }else{
                 Destroy(gameObject);
             }

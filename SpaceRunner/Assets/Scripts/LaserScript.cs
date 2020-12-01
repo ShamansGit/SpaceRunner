@@ -40,8 +40,14 @@ public class LaserScript : MonoBehaviour
             
         }else if (col.gameObject.transform.tag == "Player" && !freindly){
             col.transform.GetComponent<HealthScript>().hp -= damage; 
+            if(col.gameObject.GetComponent<HealthScript>().hp<=0){
+                GameObject.Find("deathScreen").GetComponent<DeathScript>().Die("DISINTERGATED");
+            }    
+            Destroy(gameObject);
+        }else if (col.gameObject.transform.tag != "bIgnore"){
             Destroy(gameObject);
         }
+        
         
     }  
 }

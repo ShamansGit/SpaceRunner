@@ -49,9 +49,16 @@
      <Compile Include="Assets\Scripts\Bouncer.cs" />
      <Compile Include="Assets\Scripts\LevelScroll.cs" />
      <Compile Include="Assets\TileHurtScript.cs" />
+     <Compile Include="Assets\Scripts\ShakeScript.cs" />
      <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\HeartScript.cs" />
-     <Compile Include="Assets\Scripts\ShakeScript.cs" />
+     <Compile Include="Assets\Scripts\DeathScript.cs" />
+     <Compile Include="Assets\Scripts\PauseScript.cs" />
+     <Compile Include="Assets\Scripts\MenuPlayScript.cs" />
+     <Compile Include="Assets\Scripts\QuitScript.cs" />
+     <Compile Include="Assets\Scripts\Tease.cs" />
+     <Compile Include="Assets\MoonRotate.cs" />
+     <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.2.0b2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
