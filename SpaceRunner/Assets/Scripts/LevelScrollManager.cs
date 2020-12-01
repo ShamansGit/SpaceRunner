@@ -19,10 +19,15 @@ public class LevelScrollManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        scroll+=(Input.GetAxis("Horizontal")/8)+p.transform.position.x;
-        if (scroll < 0){
-            scroll = 0;
+        if (p != null){
+            scroll+=(Input.GetAxis("Horizontal")/8)+p.transform.position.x;
+            if (scroll < 0){
+                scroll = 0;
+            }
+        }else{
+            scroll+=0.01f;
         }
+        
         
         int index = Mathf.RoundToInt(scroll)/step;
         if (sl[index] != true){

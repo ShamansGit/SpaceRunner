@@ -14,6 +14,10 @@ public class HPrenderer : MonoBehaviour
     }
     void LateUpdate()
     {
-        text.text = Mathf.CeilToInt(player.GetComponent<HealthScript>().hp).ToString();
+        if (player != null){
+            text.text = Mathf.CeilToInt(player.GetComponent<HealthScript>().hp).ToString();
+        }else{
+            text.text = "";
+        }
     }
 }

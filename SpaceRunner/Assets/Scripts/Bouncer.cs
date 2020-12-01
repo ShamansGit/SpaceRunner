@@ -22,13 +22,13 @@ public class Bouncer : MonoBehaviour
     {
         lastVelocity = rb.velocity;
         //rb.position = new Vector2(rb.position.x+=GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelScrollManager>().scroll,rb.position.y);
-        if (Vector2.Distance(rb.position,player.transform.position) < 10){
-            rb.AddForce((player.transform.position - transform.position).normalized * speed);
-        }else{
-            rb.velocity = new Vector2(0,0);
+        if (player != null){
+            if (Vector2.Distance(rb.position,player.transform.position) < 10){
+                rb.AddForce((player.transform.position - transform.position).normalized * speed);
+            }else{
+                rb.velocity = new Vector2(0,0);
+            }            
         }
-        
-
         if (transform.position.y < -100){
             Destroy(gameObject);
         }

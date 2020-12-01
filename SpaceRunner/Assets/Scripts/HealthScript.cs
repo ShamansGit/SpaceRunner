@@ -40,6 +40,7 @@ public class HealthScript : MonoBehaviour
             }
             if (resetOnDeath){
                 //GameObject.Find("deathScreen").GetComponent<DeathScript>().Die("lol bye");
+                //transform.position = new Vector2(100,transform.position.y);
                 Destroy(gameObject);
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }else{

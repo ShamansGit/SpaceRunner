@@ -18,16 +18,22 @@ public class StormScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        float scroll = lsc.GetComponent<LevelScrollManager>().scroll;
         if (Active){
             ahead+=speed;
         }
         float loc = 0f;
-        if (ahead < lsc.GetComponent<LevelScrollManager>().scroll){
-            loc += (-lsc.GetComponent<LevelScrollManager>().scroll + ahead);
-
+        if (ahead < scroll){
+            loc += (-scroll + ahead);
+        }else if (ahead - (scroll-200) < 0){
+            Debug.Log("hi");
+            ahead = scroll - 200;
         }
-        transform.position  = new Vector3(loc,p.transform.position.y,0);
+        if (p != null){
+            transform.position  = new Vector3(loc,p.transform.position.y,0);
+        }
         
+        speed = Mathf.Clamp(scroll / 5000,0.1f,0.12f) ;
     }
     void OnTriggerStay2D(Collider2D col){
         if (col.transform.tag =="Player"){

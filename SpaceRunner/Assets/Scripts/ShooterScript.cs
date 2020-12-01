@@ -31,8 +31,14 @@ public class ShooterScript : MonoBehaviour
             clip = maxClip;
         }
         reload--;
+        if (player != null){
+            playerPos = new Vector2(player.transform.position.x,player.transform.position.y);
+
+        }else{
+            alerted = false;
+            GetComponent<ShooterScript>().enabled = false;
+        }
         
-        playerPos = new Vector2(player.transform.position.x,player.transform.position.y);
         pos = new Vector2(transform.position.x,transform.position.y);
         if (Vector2.Distance(playerPos,pos) <= range){
             alerted = true;   
@@ -53,15 +59,9 @@ public class ShooterScript : MonoBehaviour
             
         }
         if (reload <= 0 && alerted){
-            //if player does not move the enemy will not attack
             reload = maxreload;
             clip--;
-            //GetComponent<SpriteRenderer>().sprite = shootSprite;
             Shoot();
-            
-            
-        }else if (reload >= (maxreload / 2)){
-            //GetComponent<SpriteRenderer>().sprite = idleSprite;
         }
     }
     void Shoot(){

@@ -14,6 +14,9 @@ public class ShakeScript : MonoBehaviour
     {
         //shake+=0.1f;
         shake = shake * step;
-        transform.position = new Vector3(0, player.transform.position.y+shake, -10f);
+        if (player != null){
+            transform.position = new Vector3(0, player.transform.position.y+shake, -10f);            
+        }
+
     }
 }
